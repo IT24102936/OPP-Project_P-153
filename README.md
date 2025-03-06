@@ -37,3 +37,4 @@ The project aims to implement a fully-functional student course management syste
 1. Clone the repository to your local machine:
    ```bash
    git clone https://github.com/yourusername/student-course-management-system.git
+
