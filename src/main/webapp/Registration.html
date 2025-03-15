@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="./css/form.css">
+</head>
+<body>
+<section class="container">
+  <header>Student Registration</header>
+  <form action="/submit" class="form">
+    <div class="input-box">
+      <label>Full Name</label>
+      <input type="text" name="fullname" id="fullname" placeholder="Enter Your full name" required>
+    </div>
+    <div class="column1">
+      <div class="input-box">
+        <label>Username</label>
+        <input type="text" name="username" id="username" placeholder="Choose a username" required>
+      </div>
+      <div class="input-box">
+        <label>Phone Number</label>
+        <input type="tel" class="form-control" id="phone" name="phone" required placeholder="Enter your phone number">
+      </div>
+    </div>
+    <div class="input-box">
+      <label>Email</label>
+      <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+    </div>
+
+    <div class="column1">
+      <div class="input-box">
+        <label>Date of Birth</label>
+        <input type="date" name="dob" id="dob" required>
+      </div>
+      <div class="input-box">
+        <label>Gender</label>
+        <select name="gender" id="gender" class="gender" required>
+          <option value="" disabled selected>Select your gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+    </div>
+    <div class="column1">
+      <div class="input-box">
+        <label>Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter your passwoord" required>
+      </div>
+      <div class="input-box">
+        <label>Confirm Password</label>
+        <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm your password" required>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+  </form>
+  <footer>Already have an account? <a href="login.html">Login here</a> </footer>
+</section>
+</body>
+</html>
