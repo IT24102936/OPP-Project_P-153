@@ -52,4 +52,7 @@ public class RegistrationServlet extends HttpServlet {
         response.setContentType("text/html");
         response.getWriter().println("<html><body><h2>Registration Successful!</h2></body></html>");
     }
+
+
+
 }
