@@ -32,43 +32,28 @@
       <scope>provided</scope>
     </dependency>
 
-    <!-- JSP/Servlet container (e.g., Apache Tomcat) -->
-    <dependency>
-      <groupId>org.apache.tomcat</groupId>
-      <artifactId>tomcat-servlet-api</artifactId>
-      <version>9.0.41</version>
-      <scope>provided</scope>
-    </dependency>
-
     <!-- For logging (Optional, for better debugging and output) -->
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>1.7.30</version>
     </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-log4j12</artifactId>
-      <version>1.7.30</version>
-    </dependency>
   </dependencies>
 
   <build>
-    <plugins>
-      <!-- Tomcat Plugin for Running Web App -->
-      <plugin>
-        <groupId>org.apache.tomcat</groupId>
-        <artifactId>maven-tomcat7-plugin</artifactId>
-        <version>2.2</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>deploy</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.1</version>
+          <configuration>
+            <source>1.8</source>
+            <target>1.8</target>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
   </build>
 
 </project>
