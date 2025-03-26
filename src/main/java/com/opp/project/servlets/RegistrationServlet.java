@@ -21,13 +21,13 @@ public class RegistrationServlet extends HttpServlet {
         // Use the user's home directory as the base path
         String userHome = System.getProperty("user.home");
         // Create a directory for the app data in the user's home directory
-        String appDataDir = userHome + File.separator + "registration-app-data";
+        String appDataDir = userHome + File.separator + "Desktop/Project/OPP-Project_P-153/src/main/resources/data";
         File dir = new File(appDataDir);
         if (!dir.exists()) {
             dir.mkdirs(); // Create the directory if it doesn't exist
         }
         // Set the file path to registrations.txt in the app data directory
-        dataFilePath = appDataDir + File.separator + "registrations.txt";
+        dataFilePath = appDataDir + File.separator + "student.txt";
     }
 
     @Override

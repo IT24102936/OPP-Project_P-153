@@ -18,12 +18,12 @@ public class LoginServlet extends HttpServlet {
     public void init() throws ServletException {
         // Use the user's home directory as the base path (platform-independent)
         String userHome = System.getProperty("user.home");
-        String appDataDir = userHome + File.separator + "registration-app-data";
+        String appDataDir = userHome + File.separator + "Desktop/Project/OPP-Project_P-153/src/main/resources/data";
         File dir = new File(appDataDir);
         if (!dir.exists()) {
             dir.mkdirs(); // Create the directory if it doesn't exist
         }
-        dataFilePath = appDataDir + File.separator + "registrations.txt";
+        dataFilePath = appDataDir + File.separator + "student.txt";
     }
 
     @Override
